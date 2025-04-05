@@ -4,7 +4,7 @@
         "ownedChars": ["bf", "bf-car", "bf-pixel", "bf-christmas", "bf-holding-gf"],
         "showUnownedChars": true,
         "unlocked": true,
-        "freeplayStyle": "bf",
+        "freeplayStyle": "sinco",
         "freeplayDJ": {
           "assetPath": "freeplay/freeplay-boyfriend",
           "cartoon": {
