@@ -53,8 +53,8 @@ class SincoCard extends Module
     sincoCardAdded = false;
   }
 
-  var topCandyRow:FlxBackdrop;
-  var lowCandyRow:FlxBackdrop;
+  var text1:FlxBackdrop;
+  var text2:FlxBackdrop;
 
   var glow:FlxSprite;
   var backLines:FlxSprite;
@@ -77,24 +77,24 @@ class SincoCard extends Module
 
         pinkBack = new FlxSprite().loadGraphic(Paths.image('freeplay/pinkBack'));
         pinkBack.color = 0xFF58D332; // sets it to his SAP green
-        FlxG.state.subState.insert(FlxG.state.subState.members.indexOf(FlxG.state.subState.dj), pinkBack);
+        // FlxG.state.subState.insert(FlxG.state.subState.members.indexOf(FlxG.state.subState.dj), pinkBack);
         pinkBack.cameras = [FlxG.state.subState.funnyCam];
 
         // make this text 1
 
-        topCandyRow = new FlxBackdrop(Paths.image('freeplay/sincoBacking/text1'), 0x01, 20);
-        topCandyRow.setPosition(0, 165);
-        topCandyRow.velocity.x = -200;
-        FlxG.state.subState.insert(FlxG.state.subState.members.indexOf(FlxG.state.subState.dj), topCandyRow);
-        topCandyRow.cameras = [FlxG.state.subState.funnyCam];
+        text1 = new FlxBackdrop(Paths.image('freeplay/sincoBacking/text1'), 0x01, 20);
+        text1.setPosition(0, 165);
+        text1.velocity.x = -200;
+        FlxG.state.subState.insert(FlxG.state.subState.members.indexOf(FlxG.state.subState.dj), text1);
+        text1.cameras = [FlxG.state.subState.funnyCam];
 
         // make this text 2
 
-        lowCandyRow = new FlxBackdrop(Paths.image('freeplay/sincoBacking/text2'), 0x01, 15);
-        lowCandyRow.setPosition(0, 340);
-        FlxG.state.subState.insert(FlxG.state.subState.members.indexOf(FlxG.state.subState.dj), lowCandyRow);
-        lowCandyRow.velocity.x = 200;
-        lowCandyRow.cameras = [FlxG.state.subState.funnyCam];
+        text2 = new FlxBackdrop(Paths.image('freeplay/sincoBacking/text2'), 0x01, 15);
+        text2.setPosition(0, 340);
+        FlxG.state.subState.insert(FlxG.state.subState.members.indexOf(FlxG.state.subState.dj), text2);
+        text2.velocity.x = 200;
+        text2.cameras = [FlxG.state.subState.funnyCam];
 
         /*
         glow = new FlxSprite(-280, 400).loadGraphic(Paths.image('freeplay/backingCards/spooky/spookyGlow'));
@@ -111,8 +111,8 @@ class SincoCard extends Module
         if (!FlxG.state.subState.fromCharSelect)
         {
             pinkBack.color = 0xFF58D332;
-            topCandyRow.visible = false;
-            lowCandyRow.visible = false;
+            text1.visible = false;
+            text2.visible = false;
             // glow.visible = false;
         }
         
@@ -151,8 +151,8 @@ class SincoCard extends Module
             if (showBackCard == true)
             {
                 pinkBack.color = 0xFF58D332;
-                topCandyRow.visible = true;
-                lowCandyRow.visible = true;
+                text1.visible = true;
+                text2.visible = true;
                 // glow.visible = true;
                 cardGlow.visible = true;
             }
@@ -177,8 +177,8 @@ class SincoCard extends Module
             showBackCard = false;
 
             pinkBack.color = 0xFF5668AC;
-            topCandyRow.visible = false;
-            lowCandyRow.visible = false;
+            text1.visible = false;
+            text2.visible = false;
             // glow.visible = false;
             cardGlow.visible = true;
         }
