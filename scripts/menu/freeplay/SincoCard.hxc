@@ -80,10 +80,9 @@ class SincoCard extends Module
         FlxG.state.subState.insert(FlxG.state.subState.members.indexOf(FlxG.state.subState.dj), pinkBack);
         pinkBack.cameras = [FlxG.state.subState.funnyCam];
 
-        /*
         // make this text 1
 
-        topCandyRow = new FlxBackdrop(Paths.image('freeplay/backingCards/spooky/candyRow1'), 0x01, 20);
+        topCandyRow = new FlxBackdrop(Paths.image('freeplay/sincoBacking/text1'), 0x01, 20);
         topCandyRow.setPosition(0, 165);
         topCandyRow.velocity.x = -200;
         FlxG.state.subState.insert(FlxG.state.subState.members.indexOf(FlxG.state.subState.dj), topCandyRow);
@@ -91,12 +90,13 @@ class SincoCard extends Module
 
         // make this text 2
 
-        lowCandyRow = new FlxBackdrop(Paths.image('freeplay/backingCards/spooky/candyRow2'), 0x01, 15);
+        lowCandyRow = new FlxBackdrop(Paths.image('freeplay/sincoBacking/text2'), 0x01, 15);
         lowCandyRow.setPosition(0, 340);
         FlxG.state.subState.insert(FlxG.state.subState.members.indexOf(FlxG.state.subState.dj), lowCandyRow);
         lowCandyRow.velocity.x = 200;
         lowCandyRow.cameras = [FlxG.state.subState.funnyCam];
 
+        /*
         glow = new FlxSprite(-280, 400).loadGraphic(Paths.image('freeplay/backingCards/spooky/spookyGlow'));
         glow.blend = 9;
         FlxG.state.subState.insert(FlxG.state.subState.members.indexOf(FlxG.state.subState.dj), glow);
@@ -111,9 +111,9 @@ class SincoCard extends Module
         if (!FlxG.state.subState.fromCharSelect)
         {
             pinkBack.color = 0xFF58D332;
-            /*topCandyRow.visible = false;
+            topCandyRow.visible = false;
             lowCandyRow.visible = false;
-            glow.visible = false;*/
+            // glow.visible = false;
         }
         
         cardGlow = new FlxSprite(-30, -30).loadGraphic(Paths.image('freeplay/cardGlow'));
@@ -151,10 +151,10 @@ class SincoCard extends Module
             if (showBackCard == true)
             {
                 pinkBack.color = 0xFF58D332;
-                /*topCandyRow.visible = true;
+                topCandyRow.visible = true;
                 lowCandyRow.visible = true;
-                glow.visible = true;
-                cardGlow.visible = true;*/
+                // glow.visible = true;
+                cardGlow.visible = true;
             }
         }
 
@@ -177,9 +177,9 @@ class SincoCard extends Module
             showBackCard = false;
 
             pinkBack.color = 0xFF5668AC;
-            /*topCandyRow.visible = false;
+            topCandyRow.visible = false;
             lowCandyRow.visible = false;
-            glow.visible = false;*/
+            // glow.visible = false;
             cardGlow.visible = true;
         }
       }
