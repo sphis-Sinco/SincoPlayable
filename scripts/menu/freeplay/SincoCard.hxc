@@ -77,7 +77,7 @@ class SincoCard extends Module
 
         pinkBack = new FlxSprite().loadGraphic(Paths.image('freeplay/pinkBack'));
         pinkBack.color = 0xFF58D332; // sets it to his SAP green
-        // FlxG.state.subState.insert(FlxG.state.subState.members.indexOf(FlxG.state.subState.dj), pinkBack);
+        FlxG.state.subState.insert(FlxG.state.subState.members.indexOf(FlxG.state.subState.dj), pinkBack);
         pinkBack.cameras = [FlxG.state.subState.funnyCam];
 
         // make this text 1
