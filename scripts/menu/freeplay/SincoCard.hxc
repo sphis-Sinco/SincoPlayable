@@ -123,7 +123,7 @@ class SincoCard extends Module
       }
         if (FlxG.state.subState.dj != null)
         {
-            if (FlxG.state.subState.dj.getCurrentAnimation() == 'Spooky DJ confirm')
+            if (FlxG.state.subState.dj.getCurrentAnimation() == 'Spooky DJ confirm') // enter stage
             {
                 showBackCard = false;
                 confirmAtlas.visible = true;
@@ -133,15 +133,15 @@ class SincoCard extends Module
             if (FlxG.state.subState.fromCharSelect || FlxG.state.subState.dj.getCurrentAnimation() == 'Spooky DJ loss reaction 1' || FlxG.state.subState.dj.getCurrentAnimation() == 'Spooky DJ fist pump')
             {
                 showBackCard = true;
-            }
+            } // loss + win
             else
             {
-                if (FlxG.state.subState.dj.getCurrentAnimation() == 'Spooky DJ' && wentBack == false)
+                if (FlxG.state.subState.dj.getCurrentAnimation() == 'Spooky DJ' && wentBack == false) // chill
                 {
                     showBackCard = true;
                 }
 
-                if (FlxG.state.subState.dj.getCurrentAnimation() == 'Spooky dj intro')
+                if (FlxG.state.subState.dj.getCurrentAnimation() == 'Spooky dj intro') // intro
                 {
                     showBackCard = false;
                 }
