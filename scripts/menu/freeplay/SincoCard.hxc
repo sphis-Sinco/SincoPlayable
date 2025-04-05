@@ -76,19 +76,20 @@ class SincoCard extends Module
         wentBack = false;
 
         pinkBack = new FlxSprite().loadGraphic(Paths.image('freeplay/pinkBack'));
-        pinkBack.color = 0xFF6620AD; // sets it to purple
+        pinkBack.color = 0xFF58D332; // sets it to his SAP green
         FlxG.state.subState.insert(FlxG.state.subState.members.indexOf(FlxG.state.subState.dj), pinkBack);
         pinkBack.cameras = [FlxG.state.subState.funnyCam];
 
-        backLines = new FlxSprite(-27, 193).loadGraphic(Paths.image('freeplay/backingCards/spooky/freeplayLines'));
-        FlxG.state.subState.insert(FlxG.state.subState.members.indexOf(FlxG.state.subState.dj), backLines);
-        backLines.cameras = [FlxG.state.subState.funnyCam];
+        /*
+        // make this text 1
 
         topCandyRow = new FlxBackdrop(Paths.image('freeplay/backingCards/spooky/candyRow1'), 0x01, 20);
         topCandyRow.setPosition(0, 165);
         topCandyRow.velocity.x = -200;
         FlxG.state.subState.insert(FlxG.state.subState.members.indexOf(FlxG.state.subState.dj), topCandyRow);
         topCandyRow.cameras = [FlxG.state.subState.funnyCam];
+
+        // make this text 2
 
         lowCandyRow = new FlxBackdrop(Paths.image('freeplay/backingCards/spooky/candyRow2'), 0x01, 15);
         lowCandyRow.setPosition(0, 340);
@@ -105,14 +106,14 @@ class SincoCard extends Module
         confirmAtlas.visible = false;
         FlxG.state.subState.insert(FlxG.state.subState.members.indexOf(FlxG.state.subState.dj), confirmAtlas);
         confirmAtlas.cameras = [FlxG.state.subState.funnyCam];
+        */
 
         if (!FlxG.state.subState.fromCharSelect)
         {
-            pinkBack.color = 0xFFFFD4E9;
-            backLines.visible = false;
-            topCandyRow.visible = false;
+            pinkBack.color = 0xFF58D332;
+            /*topCandyRow.visible = false;
             lowCandyRow.visible = false;
-            glow.visible = false;
+            glow.visible = false;*/
         }
         
         cardGlow = new FlxSprite(-30, -30).loadGraphic(Paths.image('freeplay/cardGlow'));
@@ -149,19 +150,17 @@ class SincoCard extends Module
 
             if (showBackCard == true)
             {
-                pinkBack.color = 0xFF6620AD;
-                backLines.visible = true;
-                topCandyRow.visible = true;
+                pinkBack.color = 0xFF58D332;
+                /*topCandyRow.visible = true;
                 lowCandyRow.visible = true;
                 glow.visible = true;
-                cardGlow.visible = true;
+                cardGlow.visible = true;*/
             }
         }
 
         if (FlxG.state.subState.backingCard.pinkBack != null)
         {
             pinkBack.x = FlxG.state.subState.backingCard.pinkBack.x;
-            backLines.x = FlxG.state.subState.backingCard.pinkBack.x - 30;
             cardGlow.x = FlxG.state.subState.backingCard.pinkBack.x;
         }
 
@@ -177,11 +176,10 @@ class SincoCard extends Module
             wentBack = true;
             showBackCard = false;
 
-            pinkBack.color = 0xFFFFD4E9;
-            backLines.visible = false;
-            topCandyRow.visible = false;
+            pinkBack.color = 0xFF5668AC;
+            /*topCandyRow.visible = false;
             lowCandyRow.visible = false;
-            glow.visible = false;
+            glow.visible = false;*/
             cardGlow.visible = true;
         }
       }
