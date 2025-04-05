@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="sincopixel.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="confirm0000" x="40" y="44" width="30" height="26" frameX="0" frameY="-1" frameWidth="30" frameHeight="26"/>
+	<SubTexture name="confirm0001" x="4" y="4" width="28" height="26" frameX="-1" frameY="-2" frameWidth="31" frameHeight="32"/>
+	<SubTexture name="confirm0002" x="40" y="4" width="26" height="32" frameX="-4" frameY="0" frameWidth="31" frameHeight="32"/>
+	<SubTexture name="confirm0003" x="4" y="44" width="28" height="30" frameX="-3" frameY="-2" frameWidth="31" frameHeight="32"/>
+	<SubTexture name="confirm-hold0000" x="4" y="44" width="28" height="30" frameX="0" frameY="0" frameWidth="31" frameHeight="32"/>
+	<SubTexture name="idle0000" x="40" y="44" width="30" height="26"/>
+</TextureAtlas>
