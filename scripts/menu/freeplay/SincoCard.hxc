@@ -27,7 +27,7 @@ import flixel.FlxG;
 
 class SincoCard extends Module
 {
-  var spookyCardAdded:Bool = false; //shows if the backing card has been already added in or not
+  var sincoCardAdded:Bool = false; //shows if the backing card has been already added in or not
   var showBackCard:Bool = false; //should the backing card be visible or not
   var wentBack:Bool = false;
 
@@ -44,13 +44,13 @@ class SincoCard extends Module
   override function onStateChangeEnd(event)
   {
     super.onStateChangeEnd(event);
-    spookyCardAdded = false;
+    sincoCardAdded = false;
   }
 
   override function onSubStateCloseEnd(event)
   {
     super.onSubStateCloseEnd(event);
-    spookyCardAdded = false;
+    sincoCardAdded = false;
   }
 
   var topCandyRow:FlxBackdrop;
@@ -68,11 +68,11 @@ class SincoCard extends Module
   {
 	super.onUpdate(event);
 
-    if (ReflectUtil.getClassNameOf(FlxG.state.subState) == "funkin.ui.freeplay.FreeplayState" && FlxG.state.subState.currentCharacterId == 'spookymod')
+    if (ReflectUtil.getClassNameOf(FlxG.state.subState) == "funkin.ui.freeplay.FreeplayState" && FlxG.state.subState.currentCharacterId == 'sinco')
     {
-      if (spookyCardAdded == false)
+      if (sincoCardAdded == false)
       {
-        spookyCardAdded = true;
+        sincoCardAdded = true;
         wentBack = false;
 
         pinkBack = new FlxSprite().loadGraphic(Paths.image('freeplay/pinkBack'));
