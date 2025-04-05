@@ -70,7 +70,7 @@ class SincoCard extends Module
 
     if (ReflectUtil.getClassNameOf(FlxG.state.subState) == "funkin.ui.freeplay.FreeplayState" && FlxG.state.subState.currentCharacterId == 'sinco')
     {
-      if (sincoCardAdded == false)
+      if (!sincoCardAdded)
       {
         sincoCardAdded = true;
         wentBack = false;
