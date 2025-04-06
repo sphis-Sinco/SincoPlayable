@@ -3,7 +3,7 @@
   "name": "Sinco (default)",
   "renderType": "multisparrow",
   "assetPath": "characters/sinco-default/sinco",
-  "flipX": true,
+  "flipX": false,
   "singTime": 8.0,
   "animations": [
     {
