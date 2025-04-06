@@ -1,0 +1,59 @@
+{
+  "version": "1.0.0",
+  "name": "Sinco (default)",
+  "renderType": "multisparrow",
+  "assetPath": "characters/sinco-default/sinco",
+  "flipX": true,
+  "singTime": 8.0,
+  "animations": [
+    {
+      "name": "idle",
+      "prefix": "Sinco idle",
+      "offsets": [0, 0]
+    },
+    {
+      "name": "singLEFT",
+      "prefix": "Sinco left0",
+      "offsets": [0, 0]
+    },
+    {
+      "name": "singDOWN",
+      "prefix": "Sinco down0",
+      "offsets": [0, 0]
+    },
+    {
+      "name": "singUP",
+      "prefix": "Sinco up0",
+      "offsets": [0, 0]
+    },
+    {
+      "name": "singRIGHT",
+      "prefix": "Sinco right0",
+      "offsets": [0, 0]
+    },
+    {
+      "name": "singLEFTmiss",
+      "prefix": "Sinco left miss0",
+      "assetPath": "characters/sinco-default/sincoMisses",
+      "offsets": [0, 0]
+    },
+    {
+      "name": "singDOWNmiss",
+      "prefix": "Sinco down miss0",
+      "assetPath": "characters/sinco-default/sincoMisses",
+      "offsets": [0, 0]
+    },
+    {
+      "name": "singUPmiss",
+      "prefix": "Sinco up miss0",
+      "assetPath": "characters/sinco-default/sincoMisses",
+      "offsets": [0, 0]
+    },
+    {
+      "name": "singRIGHTmiss",
+      "prefix": "Sinco right miss0",
+      "assetPath": "characters/sinco-default/sincoMisses",
+      "offsets": [0, 0]
+    }
+  ]
+}

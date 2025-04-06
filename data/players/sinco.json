@@ -1,7 +1,7 @@
 {
         "version": "1.0.0",
         "name": "Sinco",
-        "ownedChars": ["bf", "bf-car", "bf-pixel", "bf-christmas", "bf-holding-gf"],
+        "ownedChars": ["sinco"],
         "showUnownedChars": true,
         "unlocked": true,
         "freeplayStyle": "sinco",
